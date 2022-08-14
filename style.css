@@ -1,0 +1,123 @@
+body{
+    background-color: hsl(204, 43%, 93%);
+    font-family: 'Karla', sans-serif;
+    font-size: 14px;
+}
+
+.main{
+margin: 40px auto 40px auto ;
+width: 300px ;
+background-color: hsl(204, 43%, 93%);
+-webkit-box-shadow: 0px 15px 40px 0px rgba(0, 0, 0, 0.36);
+        box-shadow: 0px 15px 40px 0px rgba(0, 0, 0, 0.36);
+
+}
+.principal{
+   background-color: #ffffff;
+   padding: 20px;
+}
+.principal_titulo{
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: hsl(179, 62%, 43%);
+
+}
+
+.principal_subtitulo{
+ color: hsl(71, 73%, 54%);
+ font-weight: 700;
+ margin-bottom: 20px;
+ line-height: 1.3em; 
+ font-size: 16px;  
+    }
+.principal_paragrafo{
+    line-height: 1.7em; 
+    color: hsl(218, 22%, 67%);
+    margin-bottom: 20px;
+}
+
+.promocao{
+    background-color: hsl(179, 62%, 43%) ;
+    padding: 20px;
+    color:#ffffff;
+    display: grid;
+
+
+}
+.subtitulo_2{
+ font-weight: 700;
+ margin-bottom: 20px;
+ line-height: 1.3em;
+ font-size: 16px;
+}
+.preco{
+    display:flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.promocao_preco{
+    font-size: 28px;
+    font-weight: 700;
+    display: inline-block;
+    margin-right: 15px;
+    
+}
+.promocao_paragrafo{
+    line-height: 1.7em; 
+    margin-bottom: 20px;
+}
+.promocao_botao{
+    background:hsl(71, 73%, 54%) ;
+    color: #ffffff;
+    padding: 16px;
+    border: none;
+    border-radius: 5px;
+    
+}
+
+.sobre_nos{
+    background-color: #4ebebc ;
+    padding: 20px;
+    color: #ffffff
+}
+.sobre_nos-lista{
+    font-size: 14px;
+    }
+.sobre_nos-lista li{
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+footer{
+    text-align: center;
+    background-color: hsl(179, 62%, 43%) ;
+    width: 280px;
+    margin: auto;
+    padding: 10px;
+    color: #ffffff
+}
+@media screen and (min-width: 1440px) {
+    .main{
+        display: grid;
+        grid-template-areas: "A A " "B C" ;
+        width: 700px ;
+        margin: 200px auto 40px auto ;
+    }
+
+    .principal{
+        grid-area: A;
+    }
+    .promocao{
+        grid-area: B;
+    }
+    .sobre_nos{
+        grid-area: C;  
+    }
+    footer{
+        text-align: center;
+        background-color: hsl(179, 62%, 43%) ;
+        width: 680px;
+        margin: auto;
+        padding: 10px;
+        color: #ffffff 
+}
